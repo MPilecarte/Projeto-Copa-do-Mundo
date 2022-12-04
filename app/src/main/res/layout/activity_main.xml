@@ -7,7 +7,6 @@
     tools:context=".MainActivity">
 
 
-    <!-- A CardView that contains a TextView -->
 
     <TextView
         android:id="@+id/SelecaoNome"
@@ -15,20 +14,20 @@
         android:layout_height="wrap_content"
         android:text="Camarões"
         android:textSize="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        android:layout_marginTop="65dp"
+        android:textColor="@color/black"
+         />
 
     <ImageView
         android:id="@+id/miniBrasao"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="65dp"
         app:layout_constraintEnd_toStartOf="@+id/SelecaoNome"
-        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bandeiracamaroes"
@@ -40,10 +39,9 @@
         android:id="@+id/BrasaoSelecao"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="120dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/brasaocamaroes"
@@ -54,27 +52,27 @@
         android:id="@+id/botao"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="26dp"
         android:text="VER ESCALAÇÃO"
         android:textSize="18dp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/BrasaoSelecao" />
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/partidas"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_margin="15dp"
-        app:cardCornerRadius="7dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/botao"
-        app:layout_constraintVertical_bias="0.129">
+        >
 
         <TextView
             android:id="@+id/dia_jogo"
@@ -82,14 +80,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="24/11"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:layout_marginTop="4dp"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="x"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:layout_marginTop="4dp"
+            />
 
         <ImageView
             android:id="@+id/bandeiraSuica"
@@ -145,14 +147,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="28/11"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:layout_marginTop="4dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="x"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:layout_marginTop="3dp"
+            />
 
         <ImageView
             android:id="@+id/bandeiraServia"
@@ -209,14 +214,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="02/12"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:layout_marginTop="3dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="x"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:layout_marginTop="4dp"
+            />
 
         <ImageView
             android:id="@+id/bandeiraBrasil"

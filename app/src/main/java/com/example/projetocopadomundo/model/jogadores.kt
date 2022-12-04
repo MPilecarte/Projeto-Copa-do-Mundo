@@ -1,4 +1,11 @@
 package com.example.projetocopadomundo.model
 
-class jogadores (val id: Int) {
+data class jogadores (
+    val foto: Int,
+    val nome: String,
+    val posicao: String
+
+    ) {
+
+
 }
