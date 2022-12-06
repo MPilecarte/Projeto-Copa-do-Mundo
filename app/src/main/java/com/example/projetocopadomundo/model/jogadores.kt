@@ -4,8 +4,4 @@ data class jogadores (
     val foto: Int,
     val nome: String,
     val posicao: String
-
-    ) {
-
-
-}
+    )

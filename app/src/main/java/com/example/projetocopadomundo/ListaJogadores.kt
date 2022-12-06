@@ -1,6 +1,7 @@
 package com.example.projetocopadomundo
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -9,9 +10,11 @@ import com.example.projetocopadomundo.model.jogadores
 
 class ListaJogadores(contentLayoutId: Int) : AppCompatActivity(contentLayoutId) {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.jogador_item)
 
         val recycle_jogador = findViewById<RecyclerView>(R.id.recycleView_jogadores)//criando uma variavel para chamar o id da RicycleView
         recycle_jogador.layoutManager = LinearLayoutManager(this) //colocando a lista na vertical
@@ -26,7 +29,7 @@ class ListaJogadores(contentLayoutId: Int) : AppCompatActivity(contentLayoutId) 
         val jogador1 = jogadores(
             R.drawable.vincente_abubakar,
             "Vincent Abubakar",
-            "Atacante"
+            "Centroavante"
         )
         listaJogadores.add(jogador1)
 
@@ -40,7 +43,7 @@ class ListaJogadores(contentLayoutId: Int) : AppCompatActivity(contentLayoutId) 
         val jogador3 = jogadores(
             R.drawable.eric_maxim,
             "Eric Maxim",
-            "Atacante"
+            "Centroavante"
         )
         listaJogadores.add(jogador3)
 
@@ -61,21 +64,21 @@ class ListaJogadores(contentLayoutId: Int) : AppCompatActivity(contentLayoutId) 
         val jogador6 = jogadores(
             R.drawable.karl_toko,
             "Karl Toko",
-            "Atacante"
+            "Ponta Esq."
         )
         listaJogadores.add(jogador6)
 
         val jogador7 = jogadores(
             R.drawable.nicolas_moumi,
             "Nicolas Moumi",
-            "Zagueiro"
+            "Ponta Esq."
         )
         listaJogadores.add(jogador7)
 
         val jogador8 = jogadores(
             R.drawable.oliver_mbaizo,
             "Oliver Mbaizo",
-            "Zagueiro"
+            "Lateral Dir."
         )
         listaJogadores.add(jogador8)
 
@@ -89,21 +92,21 @@ class ListaJogadores(contentLayoutId: Int) : AppCompatActivity(contentLayoutId) 
         val jogador10 = jogadores(
             R.drawable.nouhou,
             "Nouhou",
-            "Zagueiro"
+            "Lateral Esq."
         )
         listaJogadores.add(jogador10)
 
         val jogador11 = jogadores(
             R.drawable.martin_hongla,
             "Martin Hongla",
-            "Zagueiro"
+            "Volante"
         )
         listaJogadores.add(jogador11)
 
         val jogador12 = jogadores(
             R.drawable.collins_fai,
             "Collins Fai",
-            "Zagueiro"
+            "Lateral Dir."
         )
         listaJogadores.add(jogador12)
 
@@ -131,7 +134,7 @@ class ListaJogadores(contentLayoutId: Int) : AppCompatActivity(contentLayoutId) 
         val jogador16 = jogadores(
             R.drawable.pierre_kunde,
             "Pierre Kunde",
-            "Zagueiro"
+            "Meio Central"
         )
         listaJogadores.add(jogador16)
 
